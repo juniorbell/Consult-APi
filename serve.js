@@ -13,7 +13,7 @@ app.get('/aqui/sua_rota', async (req, res) => {
     // Endpoint da API na qual deseja efetuar a consulta
     const sua_api = `https://api.sua_api.br/consult/event.json?search=${searchQuery}&limit=${limit}`; 
 
-    // Faz a requisição à API OpenFDA
+    // Faz a requisição à API 
     const response = await axios.get(sua_api);
     
     // Retorna os dados recebidos da API
